@@ -13,7 +13,7 @@ const client = new ApolloClient({
   link: new HttpLink({
     uri: 'https://api.github.com/graphql',
     headers: {
-      Authorization: 'bearer b3bfc2a67f101c3af17611ea6fd76db761bb23d4'
+      Authorization: 'bearer token'
     }
   })
 });
