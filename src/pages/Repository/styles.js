@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { readableColor } from 'polished';
 
 export const Container = styled.div`
   max-width: 700px;
@@ -101,7 +102,7 @@ export const IssueList = styled.ul`
 
 export const Label = styled.span`
   background: ${props => `#${props.color}`};
-  color: #aaa;
+  color: ${props => `${readableColor(`#${props.color}`)}`};
   border-radius: 2px;
   font-size: 12px;
   font-weight: 600;
