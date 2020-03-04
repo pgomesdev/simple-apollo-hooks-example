@@ -55,6 +55,8 @@ export default function Main() {
       <Form onSubmit={handleSubmit} error={error}>
         <input
           type="text"
+          name="repo"
+          placeholder="Type here"
           value={repository}
           onChange={e => setRepository(e.target.value)}
         />
